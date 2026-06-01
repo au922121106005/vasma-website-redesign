@@ -43,7 +43,7 @@ export function Hero() {
             scale: 1.05,
             rotate: -1,
           }}
-          className="absolute top-16 left-10 w-72 h-96 md:w-[350px] md:h-[420px] z-0"        >
+          className="absolute top-16 left-10 w-72 h-96 md:w-[350px] md:h-[420px] z-0 hidden md:block"        >
           <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl ring-1 ring-white/20 opacity-80">
             <Image
               src="/images/vasma-studio.jpg"
@@ -67,7 +67,7 @@ export function Hero() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute top-0 right-0 w-96 h-96 md:w-[500px] md:h-[500px] -mr-32 -mt-20 "
+          className="absolute top-0 right-0 w-96 h-96 md:w-[500px] md:h-[500px] -mr-32 -mt-20 hidden md:block"
         >
           <div className="relative w-full h-full rounded-lg shadow-2xl overflow-hidden">
             <Image
@@ -92,7 +92,7 @@ export function Hero() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute bottom-0 left-0 w-80 h-80 md:w-[450px] md:h-[450px] -ml-24 -mb-12"
+          className="absolute bottom-0 left-0 w-80 h-80 md:w-[450px] md:h-[450px] -ml-24 -mb-12 hidden md:block"
         >
           <div className="relative w-full h-full rounded-lg shadow-2xl overflow-hidden">
             <Image
@@ -117,7 +117,7 @@ export function Hero() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute top-1/3 right-1/4 w-72 h-96 md:w-[380px] md:h-[420px] -mr-16 "
+          className="absolute top-1/3 right-1/4 w-72 h-96 md:w-[380px] md:h-[420px] -mr-16 hidden md:block "
         >
           <div className="relative w-full h-full rounded-lg shadow-xl overflow-hidden ring-1 ring-white/20 z-0">
             <Image
@@ -143,7 +143,7 @@ export function Hero() {
           animate="visible"
           variants={heroHeadlineVariants}
           style={{ scale, opacity }}
-          className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8 text-foreground"
+          className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 md:mb-8 text-foreground"
         >
           ONE BRAND.
           <br />
@@ -157,7 +157,7 @@ export function Hero() {
           initial="hidden"
           animate="visible"
           variants={subtitleVariants}
-          className="text-lg md:text-xl text-foreground/100 max-w-3xl mx-auto mb-12 leading-relaxed font-serif-alt"
+          className="text-base sm:text-lg md:text-xl text-foreground/100 max-w-3xl mx-auto mb-10 md:mb-12 leading-relaxed font-serif-alt px-4"
         >
           {COMPANY.description}
         </motion.p>
@@ -210,7 +210,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
-          className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto"
         >
 
           <motion.div
